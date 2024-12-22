@@ -56,7 +56,7 @@ function App() {
     <>
       {isVisible && (
         <Suspense>
-          <CookieConsentModal />
+          <CookieConsentModal setHasAgreedToCookies={setHasAgreedToCookies} />
         </Suspense>
       )}
 
