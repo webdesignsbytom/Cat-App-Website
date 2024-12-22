@@ -11,7 +11,6 @@ import {
   homePageStructuredData,
 } from '../../utils/data/MetaData';
 
-
 const HomePage = React.memo(() => {
   usePageTracking(); // Tracks page views
 
@@ -27,7 +26,8 @@ const HomePage = React.memo(() => {
       />
 
       {/* Page */}
-      <div className='grid min-h-screen lg:h-screen lg:max-h-screen lg:overflow-hidden bg-main-background font-poppins'>
+      <div className='grid min-h-screen w-full h-full'>
+        <header className='grid w-full h-full min-h-screen lg:max-h-screen lg:overflow-hidden'>cat app</header>
       </div>
     </>
   );
