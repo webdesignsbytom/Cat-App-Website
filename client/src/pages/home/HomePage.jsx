@@ -25,8 +25,8 @@ const HomePage = React.memo(() => {
       {/* Tab Data */}
       <HelmetItem
         PageName='Home'
-        desc={`${CompanyName}`}
-        keywords={``}
+        desc={`${CompanyName} - Your ultimate destination for cute cat videos, fun games, and exclusive feline content.`}
+        keywords='cat videos, cute cats, cat games, feline fun, cat content'
         additionalMeta={homePageAdditionalMeta}
         structuredData={homePageStructuredData}
       />
@@ -143,7 +143,9 @@ const HomePage = React.memo(() => {
                   />
                 </figure>
                 <section className='text-center'>
-                  <h1 className='text-3xl font-atop text-colour2 text__stroke'>Available to Download Soon!</h1>
+                  <h1 className='text-3xl font-atop text-colour2 text__stroke'>
+                    Available to Download Soon!
+                  </h1>
                 </section>
               </article>
             </section>

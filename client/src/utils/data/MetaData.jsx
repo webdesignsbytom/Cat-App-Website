@@ -10,21 +10,21 @@ import {
 export const homePageStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: CompanyName,
-  url: FULL_BUSINESS_URL,
-  description: `${CompanyName} offers expert web and circuit design services in the UK.`,
+  name: 'Cat App',
+  url: 'https://cat-app.app',
+  description: 'Cat App is your ultimate destination for cute cat videos, fun games, and all things feline!',
   potentialAction: {
     '@type': 'SearchAction',
-    target: `${FULL_BUSINESS_URL}/?s={search_term_string}`,
+    target: 'https://cat-app.app/?s={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
   sameAs: [
-    `${FACEBOOK_BUSINESS_URL}`,
-    `${INSTAGRAM_BUSINESS_URL}`,
+    'https://www.facebook.com/CatApp',
+    'https://www.instagram.com/CatApp',
   ],
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: `${CompanyPhoneNumber}`,
+    telephone: '+44-1234-567890',
     contactType: 'Customer Service',
     areaServed: 'GB',
     availableLanguage: ['English'],
@@ -32,86 +32,88 @@ export const homePageStructuredData = {
 };
 
 export const homePageAdditionalMeta = [
-  { property: 'og:title', content: `Welcome to ${CompanyName}` },
+  { property: 'og:title', content: 'Welcome to Cat App' },
   {
     property: 'og:description',
-    content:
-      'Explore our simulations and tools for optimal gaming experiences.',
+    content: 'Dive into a world of adorable cat videos, fun games, and all things feline at Cat App.',
   },
-  { property: 'og:image', content: `${FULL_BUSINESS_URL}/brand/logo.png` },
-  { property: 'og:url', content: FULL_BUSINESS_URL },
+  { property: 'og:image', content: 'https://cat-app.app/brand/logo.png' },
+  { property: 'og:url', content: 'https://cat-app.app' },
   { name: 'twitter:card', content: 'summary_large_image' },
-  { name: 'twitter:title', content: `Welcome to ${CompanyName}` },
+  { name: 'twitter:title', content: 'Welcome to Cat App' },
   {
     name: 'twitter:description',
-    content: 'Discover simulations and tools for optimal gaming experiences.',
+    content: 'Enjoy endless cat content, from cute videos to games, all in one place!',
   },
-  { name: 'twitter:image', content: `${FULL_BUSINESS_URL}/brand/logo.png` },
+  { name: 'twitter:image', content: 'https://cat-app.app/brand/logo.png' },
 ];
+
 
 // Forgot password
 export const forgottenPasswordPageStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'Reset Password',
-  description: `Reset your password for your ${CompanyName} account.`,
-  url: `${FULL_BUSINESS_URL}/forgotten-password`,
+  description: 'Reset your password for your Cat App account and regain access to all your favorite cat content.',
+  url: 'https://cat-app.app/forgotten-password',
 };
 
 export const forgottenPasswordPageAdditionalMeta = [
-  { property: 'og:title', content: `Reset Your Password - ${CompanyName}` },
+  { property: 'og:title', content: 'Reset Your Password - Cat App' },
   {
     property: 'og:description',
-    content: `Securely reset your ${CompanyName} account password.`,
+    content: 'Securely reset your Cat App account password and continue enjoying cute cat videos and games.',
   },
   {
     property: 'og:image',
-    content: `${FULL_BUSINESS_URL}/assets/images/pages/reset-password-preview.jpg`,
+    content: 'https://cat-app.app/assets/images/pages/reset-password-preview.jpg',
   },
-  { property: 'og:url', content: `${FULL_BUSINESS_URL}/forgotten-password` },
+  { property: 'og:url', content: 'https://cat-app.app/forgotten-password' },
   { name: 'twitter:card', content: 'summary_large_image' },
-  { name: 'twitter:title', content: `Reset Your Password - ${CompanyName}` },
+  { name: 'twitter:title', content: 'Reset Your Password - Cat App' },
   {
     name: 'twitter:description',
-    content: `Follow the steps to securely reset your ${CompanyName} account password.`,
+    content: 'Follow the steps to securely reset your Cat App account password.',
   },
   {
     name: 'twitter:image',
-    content: `${FULL_BUSINESS_URL}/assets/images/pages/reset-password-preview.jpg`,
+    content: 'https://cat-app.app/assets/images/pages/reset-password-preview.jpg',
   },
 ];
+
 
 // Login
 export const loginPageStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'Login',
-  description: `Log in to your ${CompanyName} account to access exclusive features.`,
+  description: 'Log in to your Cat App account to access cute cat videos, fun games, and more.',
   url: `${FULL_BUSINESS_URL}/login`,
 };
 
 export const loginPageAdditionalMeta = [
-  { property: 'og:title', content: `Login - ${CompanyName}` },
+  { property: 'og:title', content: 'Login - Cat App' },
   {
     property: 'og:description',
-    content: `Access your ${CompanyName} account to explore exclusive features and services.`,
+    content: 'Access your Cat App account to enjoy endless cat content, games, and exclusive features.',
   },
   {
     property: 'og:image',
-    content: `${FULL_BUSINESS_URL}/assets/images/pages/login-preview.jpg`,
+    content: 'https://cat-app.app/assets/images/pages/login-preview.jpg',
   },
-  { property: 'og:url', content: `${FULL_BUSINESS_URL}/login` },
+  { property: 'og:url', content: 'https://cat-app.app/login' },
   { name: 'twitter:card', content: 'summary_large_image' },
-  { name: 'twitter:title', content: `Login - ${CompanyName}` },
+  { name: 'twitter:title', content: 'Login - Cat App' },
   {
     name: 'twitter:description',
-    content: `Sign in to your ${CompanyName} account and unlock access to premium features.`,
+    content: 'Sign in to your Cat App account and unlock a world of cute cat videos, games, and more.',
   },
   {
     name: 'twitter:image',
-    content: `${FULL_BUSINESS_URL}/assets/images/pages/login-preview.jpg`,
+    content: 'https://cat-app.app/assets/images/pages/login-preview.jpg',
   },
 ];
+
 
 // Register
 export const registerPageStructuredData = {
@@ -123,36 +125,34 @@ export const registerPageStructuredData = {
 };
 
 export const registerPageAdditionalMeta = [
-  { property: 'og:title', content: `Register - ${CompanyName}` },
+  { property: 'og:title', content: 'Register - Cat App' },
   {
     property: 'og:description',
-    content: `Sign up for a ${CompanyName} account to enjoy exclusive features and personalized services.`,
+    content: 'Sign up for a Cat App account to enjoy unlimited cat videos, games, and personalized content.',
   },
   {
     property: 'og:image',
-    content: `${FULL_BUSINESS_URL}/assets/images/pages/register-preview.jpg`,
+    content: 'https://cat-app.app/assets/images/pages/register-preview.jpg',
   },
-  { property: 'og:url', content: `${FULL_BUSINESS_URL}/register` },
+  { property: 'og:url', content: 'https://cat-app.app/register' },
   { name: 'twitter:card', content: 'summary_large_image' },
-  { name: 'twitter:title', content: `Register - ${CompanyName}` },
+  { name: 'twitter:title', content: 'Register - Cat App' },
   {
     name: 'twitter:description',
-    content: `Join ${CompanyName} today and unlock access to premium features.`,
+    content: 'Join Cat App today to unlock access to adorable cat videos, exciting games, and more.',
   },
   {
     name: 'twitter:image',
-    content: `${FULL_BUSINESS_URL}/assets/images/pages/register-preview.jpg`,
+    content: 'https://cat-app.app/assets/images/pages/register-preview.jpg',
   },
 ];
-
 
 // Maintenance
 export const maintenancePageStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: 'Maintenance Page',
-  description: `The ${CompanyName} website is currently undergoing maintenance. We’ll be back soon!`,
-  url: `${FULL_BUSINESS_URL}/maintenance`,
+  description: `The ${CompanyName} website is currently undergoing maintenance. We’ll be back soon with more adorable cat content!`,  url: `${FULL_BUSINESS_URL}/maintenance`,
 };
 
 export const maintenancePageAdditionalMeta = [
