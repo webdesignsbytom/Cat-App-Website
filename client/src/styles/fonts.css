@@ -1,7 +1,7 @@
-/* @font-face {
-  font-family: 'CorinthiaBold';
-  src: url('../assets/fonts/Corinthia-Bold.ttf') format('truetype');
-} */
+@font-face {
+  font-family: 'Atop';
+  src: url('../assets/fonts/Atop.ttf') format('truetype');
+}
 
 /* @font-face {
   font-family: '';

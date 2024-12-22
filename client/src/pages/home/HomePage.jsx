@@ -36,15 +36,15 @@ const HomePage = React.memo(() => {
         <header className='grid w-full h-full min-h-screen lg:max-h-screen lg:overflow-hidden bg-black px-1 py-1'>
           <div className='bg-colour2 rounded-2xl px-6 py-6'>
             <section className='relative grid h-full w-full items-center justify-center bg-colour1 rounded-2xl shadow-cardShadow'>
-              <section className='absolute -left-28 rotate-90 h-fit'>
-                <ul className='grid grid-flow-col gap-8 text-2xl text-colour2 font-semibold h-fit tracking-widest'>
-                  <li title='Videos' className='stroke-single'>
+              <section className='absolute -left-40 rotate-90 h-fit'>
+                <ul className='grid grid-flow-col gap-8 text-2xl h-fit tracking-widest font-atop'>
+                  <li title='Videos' className='text__stroke !text-colour2'>
                     Videos
                   </li>
-                  <li title='Games' className='stroke-single'>
+                  <li title='Games' className='text__stroke !text-colour2'>
                     Games
                   </li>
-                  <li title='Pictures' className='stroke-single'>
+                  <li title='Pictures' className='text__stroke !text-colour2'>
                     Pictures
                   </li>
                 </ul>
@@ -53,7 +53,7 @@ const HomePage = React.memo(() => {
               <section className='absolute grid top-6 right-8'>
                 <article className='grid grid-flow-col gap-4'>
                   <div className='grid items-center'>
-                    <h4 className='bg-colour2 text-purple-500 px-6 py-1 rounded-full shadow-cardShadow'>
+                    <h4 className='bg-colour2 text-black font-atop px-6 py-1 rounded-full shadow-cardShadow'>
                       Sponsored By Yummies
                     </h4>
                   </div>
@@ -135,15 +135,15 @@ const HomePage = React.memo(() => {
               </section>
 
               <article>
-                <figure>
+                <figure className='flex justify-center'>
                   <img
                     src={CatLogoSvg}
                     alt='Cat app logo'
-                    className='min-w-24 lg:min-w-96 w-fit h-auto'
+                    className='min-w-24 lg:min-w-96 lg:max-w-96 w-fit h-auto'
                   />
                 </figure>
                 <section className='text-center'>
-                  <h1 className='text-xl'>Available to Download Soon!</h1>
+                  <h1 className='text-3xl font-atop text-colour2 text__stroke'>Available to Download Soon!</h1>
                 </section>
               </article>
             </section>

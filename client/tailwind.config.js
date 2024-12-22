@@ -32,6 +32,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        atop: ['Atop'],
       },
       fontSize: {
         xs: '0.6rem',
