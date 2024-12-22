@@ -33,6 +33,9 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      fontSize: {
+        xs: '0.6rem',
+      },
       gridTemplateRows: {
         reg: 'auto 1fr',
         rev: '1fr auto',
