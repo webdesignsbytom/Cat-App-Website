@@ -27,8 +27,8 @@ module.exports = {
         'error-red': '#dc2626',
         'success-green': '#16a34a',
         'hyperlink-blue': '#2563EB',
-        'colour1': '#2563EB',
-        'colour2': '#FB8500',
+        'colour1': '#F7F7F7',
+        'colour2': '#ffa500',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
