@@ -36,8 +36,9 @@ const HomePage = React.memo(() => {
         <header className='grid w-full h-full min-h-screen lg:max-h-screen lg:overflow-hidden bg-black px-1 py-1'>
           <div className='bg-colour2 rounded-2xl px-6 py-6'>
             <section className='relative grid h-full w-full items-center justify-center bg-colour1 rounded-2xl shadow-cardShadow'>
-              <section className='absolute -left-40 rotate-90 h-fit'>
-                <ul className='grid grid-flow-col gap-8 text-2xl h-fit tracking-widest font-atop'>
+
+              <section className='absolute top-[63vh] left-1/2 transform -translate-x-1/2 lg:top-1/2 lg:left-8 lg:rotate-90 h-fit'>
+                <ul className='grid justify-center mx-auto text-center lg:grid-flow-col lg:gap-8 text-lg lg:text-2xl h-fit tracking-widest font-atop w-full'>
                   <li title='Videos' className='text__stroke !text-colour2'>
                     Videos
                   </li>
@@ -50,9 +51,9 @@ const HomePage = React.memo(() => {
                 </ul>
               </section>
 
-              <section className='absolute grid top-6 right-8'>
+              <section className='absolute grid top-4 lg:top-6 right-4 lg:right-8'>
                 <article className='grid grid-flow-col gap-4'>
-                  <div className='grid items-center'>
+                  <div className='hidden md:grid items-center'>
                     <h4 className='bg-colour2 text-black font-atop px-6 py-1 rounded-full shadow-cardShadow'>
                       Sponsored By Yummies
                     </h4>
@@ -68,7 +69,7 @@ const HomePage = React.memo(() => {
                 </article>
               </section>
 
-              <section className='absolute grid bottom-6 left-8'>
+              <section className='absolute top-16 left-1/2 transform -translate-x-1/2 grid md:-translate-x-0 md:top-[95%] md:left-8'>
                 <div className='grid grid-flow-col w-fit gap-2 text-black text-xl'>
                   {[1, 2, 3, 4, 5].map((star, index) => {
                     return <FaStar />;
@@ -76,8 +77,8 @@ const HomePage = React.memo(() => {
                 </div>
               </section>
 
-              <section className='absolute grid grid-flow-col gap-4 bottom-6 right-8'>
-                <button class='flex mt-3 w-40 h-12 px-2 py-1 bg-black text-white rounded-xl items-center justify-center'>
+              <section className='absolute grid md:grid-flow-col bottom-2 right-1/2 transform translate-x-1/2 md:-translate-x-0 gap-1 md:gap-4 md:bottom-6 md:right-8'>
+                <button class='flex md:mt-3 w-40 h-12 px-2 py-1 bg-black text-white rounded-xl items-center justify-center'>
                   <div class='mr-3'>
                     <svg viewBox='30 336.7 120.9 129.2' width='30'>
                       <path
@@ -106,7 +107,7 @@ const HomePage = React.memo(() => {
                   </div>
                 </button>
 
-                <button class='flex mt-3 w-40 h-12 bg-transparent text-black border-2 border-black border-solid rounded-xl items-center justify-center'>
+                <button class='flex md:mt-3 w-40 h-12 bg-transparent text-black border-2 border-black border-solid rounded-xl items-center justify-center'>
                   <div class='mr-3'>
                     <svg viewBox='0 0 384 512' width='30'>
                       <path
@@ -124,7 +125,7 @@ const HomePage = React.memo(() => {
                 </button>
               </section>
 
-              <section className='absolute top-6 left-8'>
+              <section className='absolute top-4 lg:top-6 left-4 lg:left-8'>
                 <figure>
                   <img
                     src={CatTextLogoSvg}
@@ -134,12 +135,12 @@ const HomePage = React.memo(() => {
                 </figure>
               </section>
 
-              <article>
+              <article className='-mt-10'>
                 <figure className='flex justify-center'>
                   <img
                     src={CatLogoSvg}
                     alt='Cat app logo'
-                    className='min-w-24 lg:min-w-96 lg:max-w-96 w-fit h-auto'
+                    className='min-w-20 max-w-44 lg:min-w-96 lg:max-w-96 w-fit h-auto'
                   />
                 </figure>
                 <section className='text-center'>
