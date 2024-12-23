@@ -140,7 +140,7 @@ const HomePage = React.memo(() => {
                   <img
                     src={CatLogoSvg}
                     alt='Cat app logo'
-                    className='min-w-20 max-w-44 lg:min-w-96 lg:max-w-96 w-fit h-auto'
+                    className='min-w-44 max-w-44 lg:min-w-96 lg:max-w-96 w-fit h-auto'
                   />
                 </figure>
                 <section className='text-center'>
