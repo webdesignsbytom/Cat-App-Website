@@ -38,7 +38,6 @@ jobs:
           npm ci
           echo XXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxx
           CI=false npm run build
-          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
