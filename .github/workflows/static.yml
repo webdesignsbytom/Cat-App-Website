@@ -36,6 +36,7 @@ jobs:
       - name: Install dependencies and build (optional)
         run: |
           npm ci
+          echo XXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxx
           npm run build
 
       - name: Setup Pages
