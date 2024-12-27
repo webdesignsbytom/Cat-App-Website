@@ -46,7 +46,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload built files from the 'dist' or 'build' folder
-          path: './build' # Adjust if your build folder is named differently
+          path: './client/build' # Adjust if your build folder is named differently
 
       - name: Deploy to GitHub Pages
         id: deployment
