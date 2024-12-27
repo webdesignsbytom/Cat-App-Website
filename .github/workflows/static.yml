@@ -42,6 +42,7 @@ jobs:
       - name: Install dependencies and build (optional)
         run: |
           npm ci
+          cat package.json
           npm install gh-pages --save-dev
           CI=false npm run build
 
