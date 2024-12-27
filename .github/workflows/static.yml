@@ -33,10 +33,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Add homepage to package.json
+      - name: Add homepage and deployment scripts to package.json
         run: |
           URL="https://username.github.io/repo-name"
           jq ".homepage = \"${URL}\"" package.json > tmp.json && mv tmp.json package.json
+          jq '.scripts += {"predeploy": "npm run build", "deploy": "gh-pages -d build"}' package.json > tmp.json && mv tmp.json package.json
         shell: bash
         
       - name: Install dependencies and build (optional)
